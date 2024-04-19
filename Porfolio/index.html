@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title> Personal Portfolio </title>
+
+</head>
+
+<body>
+    <!-- <div class="main">
+        <img src="sumit.jpeg">
+    </div> -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#ed"> Education </a></li>
+            <li><a href="#work"> Work </a></li>
+            <li><a href="#about"> About Me </a></li>
+            <li><a href="#contact"> Contact Me </a></li>
+        </ul>
+        <!-- <a href="#" class="nav-toggle"><i class="fa-solid fa-bars" style="color: white;"></i></a> -->
+    </div>
+
+    <section id="home">
+        <h1 class="heading"> Hey, I AM <br> Sumit Kumar Pal </h1>
+    </section>
+
+
+    <div class="education" id="ed">
+        <div class="head">
+            <h1> Education </h1>
+        </div>
+
+        <div class="btns">
+            <button class="btn">All</button>
+            <button class="btn">BCA</button>
+            <button class="btn">12th</button>
+            <button class="btn">10th</button>
+            <button id="dbtn" onclick="downlodeBtn()"> <a href="C:\Users\Sumit Pal\Downloads\PALSUMITKUMAR_Resume.pdf">
+                    Download CV </a> </button>
+        </div>
+    </div>
+
+    <div id="education">
+        <div class="educard">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2> BCA </h2>
+            <p>"BCA student with a passion for coding, problem-solving, and technology. Learning Web Development using
+                HTML, CSS, JS, Bootstrap etc. Eager to learn and grow in the IT industry."</p>
+            <button> Read More..</button>
+        </div>
+
+        <div class="educard">
+            <i class="fa-solid fa-school"></i>
+            <h2> 12th </h2>
+            <p>I had passed my 12th commerce with 67% in Dharma Hindi Vidyalaya.</p>
+            <button> Read More..</button>
+        </div>
+
+        <div class="educard">
+            <i class="fa-solid fa-school"></i>
+            <h2> 10th </h2>
+            <p>I had passed my 10th commerce with 69% in Dharm Hindi Vidyalaya.</p>
+            <button> Read More..</button>
+        </div>
+    </div>
+
+
+
+    <div id="work">
+        <div class="head">
+            <h1> My Work's </h1>
+        </div>
+        <div class="work">
+            <div class="workcard">
+                <img src="image/foodimage.jpg" alt="">
+                <h2> Food Ordering Website </h2>
+                <p> Lorem ipsum dolor sit amet consectetur<br> adipisicing elit.</p>
+                <a href="#visit">Visit</a>
+            </div>
+
+            <div class="workcard">
+                <img src="image/listimg.jpg" alt="">
+                <h2> Wild Century</h2>
+                <p> Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+                <a href="#visit">Visit</a>
+            </div>
+
+            <div class="workcard">
+                <img src="image/Hardware.jpg" alt="">
+                <h2> Hardware Shop Website </h2>
+                <p> Lorem ipsum dolor sit amet consectetur<br> adipisicing elit.</p>
+                <a href="#visit">Visit</a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <section class="about" id="about">
+        <div class="aboutmain">
+            <img src="image/sumit.jpeg">
+            <div class="about-text">
+                <h1>
+                    About Me
+                </h1>
+                <h5> Frontend Developer </h5>
+                <p> We are passionate frontend web developers dedicated to crafting engaging online experiences. With
+                    expertise in HTML, CSS, and JavaScript, we transform ideas into interactive websites. Our focus on
+                    clean code and user-centric design ensures seamless functionality and captivating visuals. Let us
+                    bring your digital vision to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="aboutmain">
+            <div class="about-text">
+                <h5> Athlete </h5>
+                <p>I am an athlete. I love sports and physical activity. Running, jumping, Skipping and competing make
+                    me feel
+                    alive. I train hard to improve my skills and perform my best. Being an athlete is not just about
+                    winning; it's about dedication, passion, and pushing my limits every day.</p>
+            </div>
+            <img src="image/sumit.jpeg">
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="contact-section">
+            <div class="inner-width">
+                <h1 id="contact">Get In Touch With Us</h1>
+                <input type="text" class="name" placeholder="Your Name" required>
+                <input type="email" class="email" placeholder="Your Email">
+                <textarea rows="1" placeholder="Message" class="message"></textarea>
+                <button type="button" class="touch">Get in touch</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="icons">
+            <a href="#home"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sumit-kumar-pal-86b828298/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="text">
+            <P> Privacy Policy </P>
+            <p> Term & Condition </p>
+            <p> Disclaimer </p>
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

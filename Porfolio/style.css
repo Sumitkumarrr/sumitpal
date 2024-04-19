@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+#home {
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.heading {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 8s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* .main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main img {
+    object-fit: contain;
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(207, 107, 70);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    font-size: 1.1rem;
+}
+
+.navbar ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+#home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(207, 107, 70);
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.heading {
+
+    color: white;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    transform: scale(1, 1.3);
+}
+
+.about {
+    width: 100%;
+    margin-top: 90px;
+    padding: 78px 0px;
+    background-color: white;
+}
+
+.about img {
+    height: auto;
+    width: 350px;
+}
+
+.about-text {
+    width: 550px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+}
+
+.about-text h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.about-text h5 {
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+.about-text p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    /* margin-bottom: 45px; */
+
+}
+
+.aboutmain {
+    width: 1130px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-section {
+    /* background: #313840; */
+    background-color: rgb(207, 107, 70);
+    padding: 80px 0;
+    text-align: center;
+}
+
+
+
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#dbtn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btns button {
+    padding: 11px;
+    border: none;
+    margin-inline: 11px;
+    border-radius: 2px;
+    background-color: rgb(207, 107, 70);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.education .head h1 {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.educard {
+    width: 300px;
+    padding: 25px;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: rgb(255, 184, 158); */
+    margin-inline: 30px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.educard i {
+    font-size: 35px;
+}
+
+.educard h2 {
+    margin-top: 10px;
+}
+
+.educard p {
+    margin-top: 20px;
+}
+
+.educard button {
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(221, 111, 71);
+}
+
+
+
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#work .head h1 {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.workcard {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.workcard img {
+    width: 450px;
+    border-radius: 5px;
+    margin-inline: 50px;
+}
+
+.workcard h2 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.workcard p {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.workcard a {
+
+    text-decoration: none;
+    color: white;
+    padding: 5px 22px;
+    background-color: rgb(207, 107, 70);
+}
+
+
+
+
+
+
+.inner-width {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+
+.contact-section h1 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.name,
+.email,
+.message {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: white;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.name {
+    float: left;
+    width: 270px;
+
+}
+
+.email {
+    float: right;
+    width: 270px;
+}
+
+.message {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.touch {
+    margin-top: 40px;
+    /* border: 1px solid #70a1ff; */
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.touch:hover {
+    background: orange;
+    color: white;
+}
+
+.footer {
+    padding: 30px;
+}
+
+.icons {
+    height: 100px;
+    line-height: 100px;
+    font-size: 25px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    margin-top: 11px;
+    font-size: 18px;
+}
+
+.fa-brands {
+    color: rgb(207, 107, 70);
+}
+
+
+
+/* @media screen and (max-width: 991px) {
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .navbar ul li a {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 670px) {
+    .workcard img {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    #dbtn {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .navbar a {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .about-text {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar ul li a {
+        font-size: 10px;
+    }
+}
